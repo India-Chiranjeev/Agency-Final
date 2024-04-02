@@ -93,7 +93,6 @@ function MouseAnimation() {
             top: event.clientY,
             left: event.clientX,
             duration: 0.2,
-            ease: "power2.out"
         });
     });
     var locker = document.querySelector("#video-content");
@@ -101,6 +100,7 @@ function MouseAnimation() {
     var locker_cover = document.querySelector("#video-content img");
     var button = document.querySelector("#video-content #yellow-circle");
     locker.addEventListener("mouseenter", function(){
+        document.documentElement.style.cursor = 'none';
         locker.addEventListener("mousemove", function(position){
             gsap.to("#cursor", {
                 opacity: 0

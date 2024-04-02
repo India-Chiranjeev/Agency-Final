@@ -27,6 +27,7 @@
             box-sizing: border-box;
     color: white;
     font-family: "Plain Light";
+    cursor: none;
 }
 
 html, body {
